@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMAGE</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-wrapper">
+        <img
+          class="img1"
+          src="https://wallpapercave.com/wp/wp1937678.jpg"
+          alt=""
+        />
+        <img
+          class="img2"
+          src="https://i.pinimg.com/736x/fb/98/d4/fb98d432ae8d583e7b2e70db02ed6768.jpg"
+          alt=""
+        />
+        <img
+          class="img3"
+          src="https://www.pockettactics.com/wp-content/uploads/2021/03/Mobile-Legends-Wallpaper-Alucard-4.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+  <style>
+    .image-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 15rem;
+      align-items: center;
+    }
+
+    .image-wrapper::before {
+      content: "";
+      position: absolute;
+      background: rgba(80, 80, 80, 0.503);
+      width: 25rem;
+      height: 50px;
+      bottom: 200px;
+      filter: blur(20px);
+      border-radius: 50%;
+    }
+
+    .image-wrapper img {
+      width: 200px;
+      clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+      transition: 0.5s ease-out 100ms;
+      cursor: pointer;
+    }
+
+    .image-wrapper img:hover {
+      transform: scale(1.05);
+    }
+
+    .image-wrapper .img1 {
+      height: 20rem;
+      margin-right: -30px;
+    }
+
+    .image-wrapper .img2 {
+      height: 25rem;
+      margin-right: -30px;
+    }
+
+    .image-wrapper .img3 {
+      height: 20rem;
+    }
+  </style>
+</html>
